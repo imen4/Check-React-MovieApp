@@ -10,7 +10,6 @@ const MovieAdd = ({addMovie}) => {
   const[description,setDescription]=useState("");
   const[year,setYear]=useState("");
   const[rating,setRating]=useState(0);
-console.log(rating)
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
