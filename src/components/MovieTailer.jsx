@@ -2,7 +2,7 @@ import React from "react";
 
 const MovieTailer = ({ embedId }) => (
   
-  <div className="video-responsive">
+  <div>
      <iframe
       width="560" 
       height="315"
