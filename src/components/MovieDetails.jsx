@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+import MovieTailer from "./MovieTailer";
 
 
 const MovieDetails = () => {
@@ -16,10 +17,12 @@ const MovieDetails = () => {
        Navigate to Home
       </Button>
     <div>
-    <strong>Movie Description:</strong>
+    <div>
+    <div style={{fontWeight: "bold"}}>Movie trailer:</div>
+    <MovieTailer embedId={state.detail.trailerLink} />
+    </div>
+    <div style={{fontWeight:"bold"}}>Movie Description:</div>
     <div>{state.detail.description}</div>
-    <strong>Movie trailer:</strong>
-    <a href={state.detail.trailerLink}>{state.detail.trailerLink}</a>
     </div>
     </div>
     );
